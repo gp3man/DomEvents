@@ -9,3 +9,12 @@
 //     p.innerText = 'Hello, I am new.'
 //     document.body.appendChild(p)
 // })
+let counter = 0;
+
+let imageBtn = document.getElementById("cookie")
+imageBtn.addEventListener("Click", function(evt) {
+    counter++
+
+    let P =document.querySelector("#exercise-1 >p")
+    P.innerText = counter
+})
